@@ -34,9 +34,22 @@ export const HourlyForecastWrapper = styled.div`
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   margin-top: auto;
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 `;
 
 export const HourlyItem = styled.div`
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
   align-items: center;
